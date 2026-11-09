@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "Workspace plugin manager",
+    "description": "Manage one workspace's plugin switches from its ... menu, with folders, batch switches, apply-on-switch prompts, and restart notices."
+  },
+  "menu": {
+    "label": "Plugin manager"
+  }
+}
