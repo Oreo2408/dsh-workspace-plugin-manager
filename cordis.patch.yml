@@ -1,0 +1,6 @@
+# dsh-workspace-plugin-manager bundle patch: inserts the dual-face plugin row.
+# The node half is an inert Host entry (exports "./"); the browser half
+# (exports "./client") renders the workspace plugin manager.
+- insert:
+    - id: workspace-plugin-manager
+      name: 'dsh-workspace-plugin-manager'

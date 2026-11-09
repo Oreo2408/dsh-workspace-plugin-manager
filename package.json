@@ -1,0 +1,60 @@
+{
+  "name": "dsh-workspace-plugin-manager",
+  "version": "0.1.0",
+  "description": "Per-workspace plugin sets for DeepSeek Harness: a floating plugin table with folders, a not-added pool, cut/copy/paste, switch prompts, restart notices, templates and JSON backup.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Oreo2408",
+  "homepage": "https://github.com/Oreo2408/dsh-workspace-plugin-manager#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oreo2408/dsh-workspace-plugin-manager.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin-manager",
+    "workspace"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.2-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0"
+  }
+}
