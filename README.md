@@ -60,3 +60,12 @@ Per-workspace plugin sets for DeepSeek Harness. Each workspace keeps its own tab
 ## License
 
 MIT
+
+
+## 截图 / Screenshots
+
+![插件管理窗口](screenshot-manager.png)
+
+![新插件提示](screenshot-new-plugins.png)
+
+![设置页](screenshot-settings.png)
